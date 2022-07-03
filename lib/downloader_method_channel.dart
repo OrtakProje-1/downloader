@@ -21,8 +21,8 @@ class MethodChannelDownloader extends DownloaderPlatform {
   }
 
   @override
-  Future<Uri?> addToLibrary(String audioPath) async {
-    final result = await methodChannel.invokeMethod<Uri?>('addToLibrary', {
+  Future<String?> addToLibrary(String audioPath) async {
+    final result = await methodChannel.invokeMethod<String?>('addToLibrary', {
       "path": audioPath,
     });
     return result;

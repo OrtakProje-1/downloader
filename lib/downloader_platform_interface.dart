@@ -31,7 +31,7 @@ abstract class DownloaderPlatform extends PlatformInterface {
     throw UnimplementedError('setMetodCallHandler() has not been implemented.');
   }
 
-  Future<Uri?> addToLibrary(String audioPath) {
+  Future<String?> addToLibrary(String audioPath) {
     throw UnimplementedError('download() has not been implemented.');
   }
 }

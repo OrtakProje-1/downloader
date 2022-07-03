@@ -74,7 +74,7 @@ class  Complete: MediaScannerConnection.OnScanCompletedListener{
     }
     override fun onScanCompleted(path: String?, uri: Uri?) {
         if(result!=null){
-            result!!.success(uri);
+            result!!.success(uri?.path);
         }
     }
 

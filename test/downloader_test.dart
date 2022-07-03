@@ -14,7 +14,7 @@ class MockDownloaderPlatform
   void setMetodCallHandler() {}
 
   @override
-  Future<Uri?> addToLibrary(String audioPath) {
+  Future<String?> addToLibrary(String audioPath) {
     throw UnimplementedError();
   }
 }
