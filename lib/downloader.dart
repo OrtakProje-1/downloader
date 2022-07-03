@@ -5,7 +5,7 @@ class Downloader {
     return DownloaderPlatform.instance.getPlatformVersion();
   }
 
-  Future<Uri?> addToLibrary(String audioPath) async {
+  Future<String?> addToLibrary(String audioPath) async {
     return DownloaderPlatform.instance.addToLibrary(audioPath);
   }
 }
