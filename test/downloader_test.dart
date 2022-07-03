@@ -14,20 +14,9 @@ class MockDownloaderPlatform
   void setMetodCallHandler() {}
 
   @override
-  Future<bool> download(String url) => Future.value(true);
-
-  @override
-  Future<bool> addToLibrary(String audioPath) {
+  Future<Uri?> addToLibrary(String audioPath) {
     throw UnimplementedError();
   }
-
-  @override
-  Future<bool> cancel() {
-    throw UnimplementedError();
-  }
-
-  @override
-  void setListener(DownloadListener listener) {}
 }
 
 void main() {

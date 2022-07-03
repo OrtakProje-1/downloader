@@ -1,9 +1,6 @@
-import 'package:downloader/download_listener.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import 'downloader_method_channel.dart';
-
-typedef DownloadListener = void Function(DownloadResult);
 
 abstract class DownloaderPlatform extends PlatformInterface {
   /// Constructs a DownloaderPlatform.
@@ -34,19 +31,7 @@ abstract class DownloaderPlatform extends PlatformInterface {
     throw UnimplementedError('setMetodCallHandler() has not been implemented.');
   }
 
-  Future<bool> download(String url) {
-    throw UnimplementedError('download() has not been implemented.');
-  }
-
-  void setListener(DownloadListener listener) {
-    throw UnimplementedError('download() has not been implemented.');
-  }
-
-  Future<bool> cancel() {
-    throw UnimplementedError('download() has not been implemented.');
-  }
-
-  Future<bool> addToLibrary(String audioPath) {
+  Future<Uri?> addToLibrary(String audioPath) {
     throw UnimplementedError('download() has not been implemented.');
   }
 }
